@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Проверка возраста</title>
+</head>
+<body>
+  <h1>Проверка возраста</h1>
+  <button onclick="askAge()">Ввести возраст</button>
+
+  <script>
+    function askAge() {
+      const age = prompt("Сколько вам лет?");
+      
+      if (age === null) {
+        // Пользователь нажал "Отмена" — скрипт завершает выполнение
+        return;
+      }
+
+      const isConfirmed = confirm(`Вы уверены, что вам ${age}?`);
+      
+      if (!isConfirmed) {
+        // Если не подтвердил — повторный запрос
+        askAge();
+      }
+    }
+  </script>
+</body>
+</html>

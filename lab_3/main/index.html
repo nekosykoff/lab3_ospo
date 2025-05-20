@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои проекты</title>
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            min-height: 100vh;
+            color: #2d3436;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #3498db;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+            color: #636e72;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .resume-image {
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+        }
+        
+        .calculator-image {
+            background: linear-gradient(45deg, #e74c3c, #f39c12);
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-content h2 {
+            margin: 0 0 0.5rem;
+            color: #2d3436;
+        }
+        
+        .project-content p {
+            margin: 0;
+            color: #636e72;
+            line-height: 1.5;
+        }
+        
+        .project-tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Мои проекты</h1>
+        <p>Коллекция моих работ на GitHub Pages</p>
+    </div>
+    
+    <div class="container">
+        <div class="projects">
+            <a href="resume/index.html" class="project-card">
+                <div class="project-image resume-image"></div>
+                <div class="project-content">
+                    <h2>Интерактивное резюме</h2>
+                    <p>Современное адаптивное резюме с анимациями и контактной формой</p>
+                    <span class="project-tag">HTML5, CSS3, JavaScript</span>
+                </div>
+            </a>
+            
+            <a href="calculator/index.html" class="project-card">
+                <div class="project-image calculator-image"></div>
+                <div class="project-content">
+                    <h2>Красивый калькулятор</h2>
+                    <p>Функциональный калькулятор с проверкой результатов и адаптивным дизайном</p>
+                    <span class="project-tag">JavaScript, CSS Grid</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Все проекты разработаны специально для GitHub Pages</p>
+    </div>
+</body>
+</html>

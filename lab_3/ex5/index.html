@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Анкета кандидата</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Анкета</h1>
+
+    <div id="form">
+      <div class="section">
+        <label>Имя: <input type="text" id="name"></label>
+      </div>
+      <div class="section">
+        <label>Возраст: <input type="number" id="age"></label>
+      </div>
+      <div class="section">
+        <label>Пол (М или Ж): <input type="text" id="gender"></label>
+      </div>
+
+      <div class="section">
+        <label><input type="checkbox" class="skill" value="math"> Знание математики</label><br>
+        <label><input type="checkbox" class="skill" value="programming"> Знание программирования</label><br>
+        <label><input type="checkbox" class="skill" value="design"> Знание дизайна</label><br>
+        <label><input type="checkbox" class="skill" value="degree"> Высшее образование</label><br>
+      </div>
+
+      <div class="section">
+        <label>О себе:<br><textarea id="about" rows="4" cols="40"></textarea></label>
+      </div>
+
+      <div class="section">
+        <label><input type="checkbox" id="consent"> Я согласен на обработку данных</label>
+      </div>
+
+      <button onclick="submitForm()" id="submitBtn">Заполнить анкету</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Результат:</h2>
+      <p id="summary"></p>
+      <button onclick="check()">Меня возьмут?</button>
+      <p id="checkResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

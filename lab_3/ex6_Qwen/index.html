@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Резюме — Александр К</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Начало заголовка -->
+  <header class="hero">
+    <div class="container">
+      <h1>Александр К</h1>
+      <p class="position">Инженер по автоматизации</p>
+      <p class="description">Опыт работы в области автоматизации технологических процессов и производств.</p>
+      <div class="buttons">
+        <a href="#" class="btn download-btn">Скачать резюме</a>
+        <a href="#contact" class="btn contact-btn">Связаться со мной</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основное содержание -->
+  <main class="content">
+    <!-- Блок опыта -->
+    <section class="experience section" id="experience">
+      <h2 class="section-title">Опыт работы</h2>
+      <div class="card">
+        <h3>Инженер по автоматизации</h3>
+        <p class="company">ООО "ТехноАвтоматика", 2024–2025</p>
+        <ul>
+          <li>Разработка и внедрение систем автоматизации на базе PLC и SCADA</li>
+          <li>Настройка датчиков и приводов, работа с HMI</li>
+          <li>Участие в модернизации производственных линий</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Младший инженер</h3>
+        <p class="company">АО "Станкостроитель", 2012–2024</p>
+        <ul>
+          <li>Обслуживание автоматизированных станков</li>
+          <li>Поддержка программного обеспечения</li>
+          <li>Документирование процессов</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Образование -->
+    <section class="education section" id="education">
+      <h2 class="section-title">Образование</h2>
+      <div class="card">
+        <h3>МГТУ «Станкин»</h3>
+        <p class="course">Специальность: Автоматизация технологических процессов и производств</p>
+        <p class="years">2018–2022</p>
+      </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Навыки</h2>
+      <ul class="skills-list">
+        <li>PLC (Siemens S7, Allen Bradley)</li>
+        <li>SCADA (WinCC, Ignition)</li>
+        <li>HMI (PanelView, KTP)</li>
+        <li>C++, Python, SQL</li>
+        <li>Работа в команде</li>
+        <li>Проблемное мышление</li>
+        <li>Техническая документация</li>
+      </ul>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Связаться со мной</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" placeholder="Ваше имя" required />
+        <input type="email" id="email" placeholder="Ваш email" required />
+        <textarea id="message" rows="5" placeholder="Сообщение" required></textarea>
+        <button type="submit" class="btn submit-btn">Отправить</button>
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <p>© 2025 Александр К | Разработано самостоятельно</p>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="script.js"></script>
+</body>
+</html>

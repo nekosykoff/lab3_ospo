@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .resume-container {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 30px;
+    width: 600px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  .photo {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+  .bg-btn {
+    background-color: #2196F3;
+  }
+  
+  .bg-btn:hover {
+    background-color: #1565c0;
+  }
+  

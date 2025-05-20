@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Числовые функции</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Работа с числами</h1>
+
+    <label for="num1">Число 1:</label>
+    <input type="number" id="num1" />
+
+    <label for="num2">Число 2:</label>
+    <input type="number" id="num2" />
+
+    <label for="operation">Операция:</label>
+    <select id="operation">
+      <option value="min">Минимум</option>
+      <option value="max">Максимум</option>
+      <option value="equal">Равны ли?</option>
+    </select>
+
+    <button onclick="calculate()">Вычислить</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
